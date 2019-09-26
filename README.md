@@ -13,3 +13,9 @@ If you have a (custom) bootloader you have the advantage of avoid using a cable 
 All the ST MCUs store Bootloader in ROM (Read only Memory) a.k.a System Memory. By default MCU will not execute any code from this memory but you can configure MCU to boot or execute bootloader from this memory.
 
 ![](Images/Capture.PNG)
+
+Assuming single block of memory, the FLASH memory's re-writable capability can be achieved only when the flash is completely erased and then it can be reprogrammed again. Doing so, will erase the complete data inside it.
+
+Lets say you need to store some important information and it has to be retained in the flash (for eg., a piece of code for bootloader, which is responsible for the multiple programming of the MCU), if that itself gets erased on the next reprogramming then there is no use of it.
+
+In-order to avoid this, the flash memory is splitted into different sectors and each sectors can be erased independently without affecting the data in the other sectors. So you may store your bootloader in first one or two sectors and other sectors for you user application.
