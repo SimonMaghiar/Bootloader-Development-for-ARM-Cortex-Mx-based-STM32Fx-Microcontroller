@@ -25,3 +25,7 @@ In-order to avoid this, the flash memory is splitted into different sectors and 
 Boot Configuration of STM32F446xx MCU. There are 2 pins associated with BOOT1 and BOOT0. 0 means that the respective pin is grounded, 1 means the pin is pulled to high. If you configure BOOT1=0 and BOOT0 = 1 during reset, System memory will be selected and code inside of this memory region will be executed after rester. 
 
 ![](Images/Bootmodes.PNG)
+
+This table shows which are the peripherals that can be used for the host to communicate with the bootloader.
+
+![](Images/Bootloader.PNG)
