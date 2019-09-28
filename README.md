@@ -26,6 +26,6 @@ Boot Configuration of STM32F446xx MCU. There are 2 pins associated with BOOT1 an
 
 ![](Images/Bootmodes.PNG)
 
-This table shows which are the peripherals that can be used for the host to communicate with the bootloader.
+This table shows which are the peripherals that can be used by the bootloader to communicate with the host.
 
 ![](Images/Bootloader.PNG)
