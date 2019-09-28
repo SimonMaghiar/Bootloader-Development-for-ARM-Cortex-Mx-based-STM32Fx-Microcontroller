@@ -36,4 +36,4 @@ In this project, we will place our bootloader in the flash memory, more exactly 
 
 There are some of the commands that you can use during bootloader development.
 
-![](Images/Boot_commands.PNG)
+![](Images/Boot_Commands.PNG)
