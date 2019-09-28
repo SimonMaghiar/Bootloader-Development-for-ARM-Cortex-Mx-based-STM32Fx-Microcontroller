@@ -21,3 +21,7 @@ Lets say you need to store some important information and it has to be retained 
 In-order to avoid this, the flash memory is splitted into different sectors and each sectors can be erased independently without affecting the data in the other sectors. So you may store your bootloader in first one or two sectors and other sectors for you user application.
 
 ![](Images/stackvscounter.jpg)
+
+Boot Configuration of STM32F446xx MCU. There are 2 pins associated with BOOT1 and BOOT0. 0 means that the respective pin is grounded, 1 means the pin is pulled to high. If you configure BOOT1=0 and BOOT0 = 1 during reset, System memory will be selected and code inside of this memory region will be executed after rester. 
+
+![](Images/Bootmodes.jpg)
