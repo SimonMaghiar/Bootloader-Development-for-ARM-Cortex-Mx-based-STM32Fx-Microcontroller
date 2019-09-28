@@ -29,3 +29,7 @@ Boot Configuration of STM32F446xx MCU. There are 2 pins associated with BOOT1 an
 This table shows which are the peripherals that can be used by the bootloader to communicate with the host.
 
 ![](Images/Bootloader.PNG)
+
+In this project, we will place our bootloader in the flash memory, more exactly in the Sector 0 and Sector 1.
+
+![](Images/Bootloader_placement.PNG)
