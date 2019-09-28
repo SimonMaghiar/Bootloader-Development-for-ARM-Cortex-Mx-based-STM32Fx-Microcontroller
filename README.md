@@ -33,3 +33,7 @@ This table shows which are the peripherals that can be used by the bootloader to
 In this project, we will place our bootloader in the flash memory, more exactly in the Sector 0 and Sector 1. Note that the ST guys already placed their bootloader in the ROM memory and we can't remove it or overwrite it.
 
 ![](Images/Bootloader_placement.PNG)
+
+There are some of the commands that you can use during bootloader development.
+
+![](Images/Boot_commands.PNG)
