@@ -41,3 +41,7 @@ There are some of the commands that you can use during bootloader development.
 Our project consist of two projects. If the button is pressed during reset, the execution will jump to the bootloader mode. When it's not pressed, the user application will be executed (which is nothing but a simple button-led toggling using interrupt).
 
 ![](Images/FlowChart.PNG)
+
+NOTE! The user application was created in a different project! The linker script of this project was modified so that this user application was actually loaded into the MCU starting from Sector 3 onward. This is because Sector 1 and 2 will be used for our custom bootloader.
+
+![](Images/LinkerScript.PNG)
