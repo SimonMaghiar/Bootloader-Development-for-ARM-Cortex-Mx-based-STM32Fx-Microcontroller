@@ -49,3 +49,8 @@ NOTE! The user application was created in a different project! The linker script
 You can see in the image below that the user code was succesfuly loaded starting from the address 0x8008000.
 
 ![](Images/Memory.PNG)
+
+NOTE! There are 2 vector table present in our MCU!. One vector table is from the bootloader starting from 0x0800000 and the other vector table is from the user application starting from 0x08008000. When you flash the code of the user application into the Sector 2 onward, you also need to change the vector table address !. The MCU by default assumes that the vector table starts from the address 0x08000000. But since our user applic. starts from Sector 2, we need to instruct the MCU to take the vector table from 0x08008000. 
+So basically you need to tell the user application to not use the vector table from the default location which is now in our case used by the bootloader! 
+
+To solve this issue , there is a register called VTOR (vector table relocation register). In this register, you have to write 0x08008000.
