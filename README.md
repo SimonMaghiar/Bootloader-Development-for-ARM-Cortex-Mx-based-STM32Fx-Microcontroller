@@ -54,3 +54,7 @@ NOTE! There are 2 vector table present in our MCU!. One vector table is from the
 So basically you need to tell the user application to not use the vector table from the default location which is now in our case used by the bootloader! 
 
 To solve this issue , there is a register called VTOR (vector table relocation register). In this register, you have to write 0x08008000.
+
+It's not necesarry to hard-code the base address into the VTOR. We can just change this define here.
+
+![](Images/Vector_Offset.PNG)
