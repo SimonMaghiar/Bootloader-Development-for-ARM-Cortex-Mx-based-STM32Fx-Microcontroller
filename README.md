@@ -46,6 +46,6 @@ NOTE! The user application was created in a different project! The linker script
 
 ![](Images/LinkerScript.PNG)
 
-You can see the image below that the user code was succesfuly loaded starting from the address 0x8008000.
+You can see in the image below that the user code was succesfuly loaded starting from the address 0x8008000.
 
 ![](Images/Memory.PNG)
