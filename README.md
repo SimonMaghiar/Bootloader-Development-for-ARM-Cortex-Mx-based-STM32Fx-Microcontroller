@@ -42,7 +42,7 @@ Our project consist of two projects. If the button is pressed during reset, the 
 
 ![](Images/FlowChart.PNG)
 
-NOTE! The user application was created in a different project! The linker script of this project was modified so that this user application was actually loaded into the MCU starting from Sector 3 onward. This is because Sector 1 and 2 will be used for our custom bootloader.
+NOTE! The user application was created in a different project! The linker script of this project was modified so that this user application was actually loaded into the MCU starting from Sector 2 onward. This is because Sector 1 and 2 will be used for our custom bootloader.
 
 ![](Images/LinkerScript.PNG)
 
