@@ -37,3 +37,7 @@ In this project, we will place our bootloader in the flash memory, more exactly 
 There are some of the commands that you can use during bootloader development.
 
 ![](Images/Boot_Commands.PNG)
+
+Our project consist of two projects. If the button is pressed during reset, the execution will jump to the bootloader mode. When it's not pressed, the user application will be executed (which is nothing but a simple button-led toggling using interrupt).
+
+![](Images/FlowChart.PNG)
